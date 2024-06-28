@@ -27,12 +27,6 @@ export class BankAccount {
             )
           );
           return (this.saldo = saldoSementara);
-        } else if (isNaN(amount) == true || amount < 0) {
-          reject(
-            new Error(
-              "Jumlah tidak valid. Silahkan memasukkan angka yang benar."
-            )
-          );
         } else {
           this.saldo -= amount;
           resolve(
@@ -59,3 +53,5 @@ export class BankAccount {
     };
   }
 }
+
+// export default BankAccount
