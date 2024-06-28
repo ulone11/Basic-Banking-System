@@ -59,7 +59,3 @@ export class BankAccount {
     };
   }
 }
-
-// export default BankAccount;
-
-// user1.amount = document.getElementById("saldo");

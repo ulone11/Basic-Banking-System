@@ -1,4 +1,4 @@
-import { BankAccount } from "./bank_account.js";
+import BankAccount from "./bank_account.js";
 
 async function main() {
   let user1 = new BankAccount("Ulwan", 123456, 0);
@@ -8,12 +8,12 @@ async function main() {
   );
 
   try {
-    let depositAmount = +prompt("Masukkan jumlah deposit: ");
-    if (isNaN(depositAmount) || depositAmount < 0) {
+    let jumlahDeposit = +prompt("Masukkan jumlah deposit: ");
+    if (isNaN(jumlahDeposit) || jumlahDeposit < 0) {
       throw new Error("Inputan tidak valid!");
     }
-    let depositResult = await user1.deposit(depositAmount);
-    console.log(depositResult);
+    let hasilDeposit = await user1.deposit(jumlahDeposit);
+    console.log(hasilDeposit);
   } catch (error) {
     console.log("Error during deposit:", error.message);
   }
@@ -25,9 +25,9 @@ async function main() {
   }
 
   try {
-    let withdrawAmount = +prompt("Masukkan jumlah penarikan: ");
-    let withdrawResult = await user1.withdraw(withdrawAmount);
-    console.log(withdrawResult);
+    let jumlahPenarikan = +prompt("Masukkan jumlah penarikan: ");
+    let hasilPenarikan = await user1.withdraw(jumlahPenarikan);
+    console.log(hasilPenarikan);
   } catch (error) {
     console.log("Error during withdrawal:", error.message);
   }
