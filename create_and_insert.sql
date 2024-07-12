@@ -51,15 +51,17 @@ insert into nasabah (
 nama,
 alamat,
 email,
-no_telepon
-) values ('andi', 'jl. Jambi, Kota Binjai', 'andi@email.com', '+6218354984350');
+no_telepon,
+tgl_lahir
+) values ('andi', 'jl. Jambi, Kota Binjai', 'andi@email.com', '+6218354984350', '1997-02-14');
 
 insert into nasabah (
 nama,
 alamat,
 email,
-no_telepon
-) values ('rayhan', 'jl. Bogor, Kota Medan', 'bogor@email.com', '+6218354954875');
+no_telepon,
+tgl_lahir
+) values ('rayhan', 'jl. Bogor, Kota Medan', 'bogor@email.com', '+6218354954875', '1999-11-11');
 
 update nasabah
 set
